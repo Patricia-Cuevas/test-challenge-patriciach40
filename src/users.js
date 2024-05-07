@@ -4,7 +4,12 @@ const users = require("./data").default;
 
 // Fetches all users
 const getUsers = () => {
-  return users;
+  try {
+    const response = fetch(`${users}`);
+    return users;
+  } catch (err) {
+    console.log(err)
+  }
 };
 
 // Filters users by specific ID
