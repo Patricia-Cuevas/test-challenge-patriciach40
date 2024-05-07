@@ -16,6 +16,7 @@ const getUsers = () => {
 
 // Filters users by specific ID
 const getUser = (id) => {
+  const id = users.filter( user.id ==="id");
   return users.find((user) => user.id === id);
 };
 

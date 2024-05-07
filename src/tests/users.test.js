@@ -15,8 +15,16 @@ test('getUser', () => {
     it('Find the user by id', () => {
         const user = users[0];
         expect(getUser)
-    }) 
+    });
 
-})
+});
+
+test('getUsers', () => {
+    it('Find users', () => {
+        const user = users[0];
+        expect(getUsers)
+    });
+
+});
 
 
