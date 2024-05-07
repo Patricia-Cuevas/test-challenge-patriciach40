@@ -5,7 +5,9 @@ const users = require("./data").default;
 // Fetches all users
 const getUsers = () => {
   try {
-    const response = fetch(`${users}`);
+    fetch(`${users}`)
+    .then(response => response.text())
+    .then (result => `${users}`)
     return users;
   } catch (err) {
     console.log(err)
