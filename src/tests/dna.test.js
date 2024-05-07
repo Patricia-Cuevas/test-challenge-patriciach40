@@ -1,5 +1,12 @@
+const { string } = require("yargs");
 const testDna = require("../dna");
 
-test('Secuencia DNA', () => {
+describe('isValidDNA'), () => {
+    it('Regresa el string correcto', () => {
+        const isValidDNA = isValidDNA('string');
+        expect(isValidDNA).toEqual(string)
+
+    });
     
-})
+
+};

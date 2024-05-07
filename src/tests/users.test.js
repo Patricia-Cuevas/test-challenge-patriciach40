@@ -7,12 +7,16 @@ import { getUser, getUsers } from "../users";
 
 const users = require("../users");
 const {
-    getUser,
     getUsers,
+    getUser,
 } = require("../users");
 
 test('getUser', () => {
-    
+    it('Find the user by id', () => {
+        const user = users[0];
+        expect(getUser)
+    }) 
+
 })
 
 
